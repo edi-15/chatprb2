@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    min-width: 471px;
+    overflow-x: hidden;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rebeccapurple;
+    color: white;
+    /* overflow: hidden; */
+}
+
+#login h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#login input[type=email], #login input[type=password]{
+    padding: 20px 10px;
+    width: 90%;
+    outline: none;
+}
+
+#login input[type=submit] {
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    /* padding: 10px; */
+    box-shadow: 0 0 5px grey;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoHeadUser {
+    display: flex;
+    align-items: center;
+}
+
+.lgout {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    /* text-transform: lowercase; */
+}
+
+.back {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.imgUser {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(170, 163, 163);
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.logoutButtonContent {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/* FIN HEAD*/
+
+.tools {
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    margin: auto;
+    /* bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 5px grey;
+    padding: 10px;
+    align-items: center; */
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 36px;
+}
+
+#formChat {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 5px grey;
+    padding: 10px;
+    align-items: center;
+}
+
+.tool-emoji {
+    font-size: 20px;
+}
+
+.messaje {
+    width: 60%;
+    padding: 10px;
+    border-radius: 40px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.sendMessaje {
+    width: 34px;
+}
+
+
+/*FIN TOOLS*/
+
+
+.mensajes {
+    /* width: 100%;
+    height: 100%;
+    display: grid; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: auto; */
+    /* display: flex; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    height: 100%;
+    max-height: 590px;
+    overflow: auto !important;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* padding: 10px; */
+}
+
+/* .space {
+    background-color: none;
+    padding: 10px;
+} */
+
+.el {
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* align-items: center; */
+    /* display: flex;
+    flex-direction: column; */
+    /* background: #74959A; */
+}
+
+
+.mios {
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    /* text-align: end; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: end; */
+    /* background: #98B4AA; */
+}
+
+.fhml {
+    display: flex;
+    color: black;
+}
+
+.fecha {
+    font-size: 10px;
+    color: black;
+    margin: 5px 10px;
+    text-align: start;
+}
+
+.hora {
+    font-size: 10px;
+    color: white;
+    margin: 5px 10px;
+    text-align: start;
+}
+
+.emailMensaje {
+    font-size: 15px;
+    text-align: start;
+}
+
+.mensajeEl {
+    padding: 5px;
+    /* background: #74959A; */
+    background: #00B4D8;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 0px 5px 5px 15px;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    /* flex-direction: column; */
+    /* min-width: 30%; */
+    /* font-size: 20px; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: black;
+}
+
+.mensajeMio {
+    padding: 5px;
+    /* background: #98B4AA; */
+    background: #2D31FA;
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 5px 0px 15px 5px;
+    text-align: center;
+    margin: 10px 0;
+    /*NUEVO*/
+    display: flex;
+    /* flex-direction: column; */
+    align-items: end;
+    min-width: 30%;
+    /* font-size: 20px; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /*NUEVO*/
+    padding: 5px;
+    /* background: #98B4AA; */
+    background: #2D31FA;
+    color: white;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 5px 0px 15px 5px;
+    text-align: start;
+    margin: 10px 0;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    min-width: 30%;
+    /* font-size: 20px; */
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+/*
+            <!-- <div class="space"></div> -->
+            <div class="el">
+                <!-- <span class="mensajeEl">Hola!</span>
+                    <span class="mensajeEl">Hola!</span> -->
+                    <!-- <span class="mensajeEl">Yo soy el deño!</span> -->
+                </div>
+                <!-- <div class="s">sss</div>
+                <div class="g">ggg</div> -->
+                <div class="mios">
+                    <!-- <span class="mensajeYo">Hola!</span>
+                    <span class="mensajeEl">Hola!</span> -->
+                    
+                    <!-- <span class="mensajeMio">Mio!</span> -->
+                </div>
+
+*/
+
+/*
+
+    const q = query(collection(db, "chat").onSnapshot(q, (querySnapshot) => {
+      const chat = [];
+      querySnapshot.forEach((doc) => {
+        chat.push(doc.data().texto);
+      });
+      console.log("Current cities in CA: ", cities.join(", "));
+    )};
+*/
+
+
+/*BUEEENOOOOOOO
+
+    querySnapshot.forEach((doc) => {
+      console.log(`${doc.id} => ${doc.data()}`);
+      // document.querySelector(".mensajes").innerHTML = `
+      // // ${doc.id} => ${doc.data().texto}`;
+      if (doc.data().uid === user.uid) {
+        // console.log("Son iguales" + doc.data().texto + user.uid);
+        // console.log("son iguales");
+        const msjsNsAl = (document.querySelector(".mensajes").innerHTML += `
+            <div class="mios">
+              <span class="mensajeMio">${doc.data().texto}</span>
+            </div>
+            `);
+      } else if (doc.data().uid != user.uid) {
+        const msjsNsAl = (document.querySelector(".mensajes").innerHTML += `
+            <div class="el">
+              <span class="mensajeEl">${doc.data().texto}</span>
+            </div>
+            `);
+      }
+      // const id = `${doc.id}`;
+    });
+
+*/
